@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -37,8 +38,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun doneClicked(view: View) {
-        val endactivity = Intent(this, EndActivity::class.java)
-        startActivity(endactivity)
+        if (artist != "") {
+            val endactivity = Intent(this, EndActivity::class.java)
+            endactivity.putExtra("artist", artist)
+            startActivity(endactivity)
+        } else {
+            Toast.makeText(this, "Choose a Artist!", Toast.LENGTH_SHORT).show()
+        }
     }
 
 }
