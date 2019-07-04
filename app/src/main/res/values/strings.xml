@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Practice1</string>
+    <string name="you_like">You Like …</string>
+    <string name="background">background</string>
+    <string name="david_hockney">David Hockney</string>
+    <string name="henti_matisse">Henti Matisse</string>
+    <string name="togglebutton">ToggleButton</string>
+    <string name="alex_katz">Alex Katz</string>
+    <string name="done">DONE</string>
+</resources>
